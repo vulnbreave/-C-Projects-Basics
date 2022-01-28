@@ -1,0 +1,13 @@
+#include <stdio.h>
+main() {
+FILE *ky;
+int GAWD;
+ky = fopen("/home/public/7dayC/reading/thetext.txt","r");
+GAWD = getc(ky);
+
+while(GAWD != EOF) {
+putchar(GAWD);
+GAWD = getc(ky);
+}
+fclose();
+}
